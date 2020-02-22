@@ -1,0 +1,32 @@
+.ourInfo{
+    margin-top: 90px;
+    @include flexCenter;
+
+
+    .ourInfo__text{
+        margin-top: 2rem;
+        width: 30rem;
+        margin-right: 3rem;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+    }
+   
+ 
+    .ourInfo__photo{
+        width: 45rem;
+        img{
+            width: 45rem;
+            height:40rem;
+            border-radius: 5px;
+        }
+    }
+
+
+}

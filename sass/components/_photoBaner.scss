@@ -1,0 +1,32 @@
+.photoBaner{
+
+
+    background-image: linear-gradient(to right bottom,rgba(80, 79, 83, 0.3)  ,rgb(32, 32, 41)),
+    url('../../img/aboutUs-baner.jpg');
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+
+   
+    
+}
+.contactHeader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+
+    h1{
+        width: 100%;
+        font-size: 6rem;
+    }
+    p{
+        margin-top: 3rem;
+        // width: 40rem;
+        font-size: 2rem;
+    }
+}

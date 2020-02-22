@@ -1,0 +1,106 @@
+.pay-method{
+    @include flexCenter;
+    background-color: lightgray;
+
+    &__type{
+        display: flex;
+        flex-direction: row;
+        border: none !important;
+    }
+    &__div{
+        margin: 3rem 6rem;
+        cursor: pointer;
+        transition: all .3s;
+        
+    }
+
+    &__div:hover {
+        filter: opacity(.7);
+        transform: scale(1.1);
+       
+    }
+
+    &__i{
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+&__title{
+    font-size: 3rem;
+}
+
+}
+
+.cash{
+    margin-top: 5rem;
+    @include flexCenter;
+
+    &__left{
+        width: 40rem;
+        h1{
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+
+        }
+        p{
+            font-size: 1.7rem;
+            opacity: .9;
+        }
+    }
+    &__right{
+        margin-left: 3rem;
+        width: 30rem;
+        img{
+            width: 30rem;
+           
+        }
+    }
+}
+
+.pay-contact{
+    @include flexCenter;
+    background-image:url('../../img/Contact-Us.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  
+}
+.carts{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__header{
+        display: block;
+        margin: 3rem auto 0 auto;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+        width: 50%;
+    }
+    .payment{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      
+        img{
+            margin-left: -17rem;
+            width: 45rem;
+        }
+        &__text{
+
+            width: 30rem;
+            opacity: .9;
+            font-size: 2rem;
+        }
+        
+    }
+}

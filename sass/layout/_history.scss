@@ -1,0 +1,38 @@
+.history{
+    margin-top: 90px;
+    @include flexCenter;
+
+
+    &__info{
+        margin-top: 2rem;
+        width: 30rem;
+        margin-right: 3rem;
+
+        h1{
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-weight: 300;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+   
+ 
+    &__story{
+        width: 45rem;
+        height: 100%;
+        margin-bottom: 10rem;
+        
+        h1{
+        font-weight: 500;
+        font-size: 2.3rem;
+        text-align: center;
+        height: 100%;
+        padding-left: 15rem;
+        }
+    }
+
+
+}

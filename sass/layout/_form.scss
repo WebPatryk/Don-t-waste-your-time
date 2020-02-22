@@ -1,0 +1,100 @@
+.form{
+@include flexCenter;
+flex-direction: column;
+margin-bottom: 2rem;
+
+@media only screen and (max-width: $bp-medium) {
+    display: block;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.formularz{
+    position: relative;
+}
+
+.sex{
+    text-align: center;
+
+    @include flexCenter;
+    padding:2rem;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+      }
+    
+ 
+}
+
+&__title{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+
+input[type=text]{
+    width: 15rem;
+    padding:1rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    outline: none;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+        width: 80%;
+     
+    }
+}
+input[type=email]{
+    width: 100%;
+    padding:1rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    outline: none;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+        width: 80%;
+     
+    }
+}
+input:focus{
+    border: 1px solid orange;
+    box-shadow: 0 0 3px rgba(orange,.3);
+}
+.name{
+    margin-right: 2rem;
+}
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    border-radius: 10px;
+    padding:1rem;
+    resize: none;
+    margin-bottom: 2rem;
+
+    
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+        width: 80%;
+     
+    }
+}
+textarea:focus{
+    border: 1px solid orange;
+    box-shadow: 0 0 3px rgba(orange,.3);
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+}

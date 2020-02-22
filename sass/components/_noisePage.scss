@@ -1,0 +1,246 @@
+// .noise__sidebar{
+//     transform: translate(-50%,-50%);
+//     display: flex;
+
+// }
+// .video-text-content{
+//     position: absolute;
+//     top:0;
+//     left: 0;
+//     @include flexCenter;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     width: 100%;
+ 
+
+//       ul{
+//           list-style-type: none;
+    
+
+//       }
+//       li{
+
+       
+//       }
+//       a{
+//           display: inline-block;
+//         //   border-left: 4px solid yellow;
+//           font-size: 1.5rem;
+//           text-decoration:none;
+//           color: black;
+//          font-weight: bold;
+    
+   
+//             &:hover{
+//                 color: yellow;
+//             }
+       
+//       }
+
+//   }
+//   .noise__presentation{
+
+//        width: 65%;
+//       flex-basis: 45%;
+//       margin-left: 5rem;
+
+
+//   h1{
+//   font-size: 4rem;
+
+//   }
+//   p{
+//   margin: 3rem 0;
+//   width: 70%;
+
+//   font-size: 1.2rem;
+//   opacity: .7;
+//   }
+
+
+//   }
+.video-text-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+   
+
+}
+
+.video-center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+             
+        display: block;
+            }
+
+    .noise__sidebar{
+        margin-left: 10rem;
+        width: 30rem;
+        margin-right: 10rem;
+
+        @media only screen and (max-width: $bp-largest) {
+             
+            width: 15rem;
+            margin-right: 5rem;
+            margin-left:0;
+          }
+     
+          @media only screen and (max-width: $bp-medium) {
+             
+           
+            margin: 3rem auto;
+            transform: translateX(-20%);
+                }
+        
+        ul{
+            margin-top: 5rem;
+            list-style-type: none;
+            margin-left: 5rem;
+        }
+        li{
+            
+            border-left: 2px solid $button-background-color;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            transition: all .4s;
+            width: 0;
+            &:hover{
+                width:100%;
+                border-radius: 3px;
+                background-color:$button-background-color;
+            }
+        }
+        a{
+            font-size: 2.5rem;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-largest) {
+             
+               font-size: 1.5rem;
+              }
+          
+        
+        }
+        i{
+            margin-right: 1rem;
+        }
+    }
+
+    .noise__presentation{
+ 
+        width: 35rem;
+        margin-top: 2rem;
+       
+       
+        // @media only screen and (max-width: $bp-ver-largest) {
+             
+        //     width: 30rem;
+        //     margin-left: 5rem;
+        //    }
+
+    
+      
+           @media only screen and (max-width: $bp-largest) {
+             
+            width: 30rem;
+            
+          }
+          
+          @media only screen and (max-width: $bp-largest) {
+             
+          
+            
+          }
+        h1{
+            margin-bottom: 3rem;
+            font-size: 3rem;
+            @media only screen and (max-width: $bp-largest) {
+             
+                font-size: 2.5rem;
+                width: 5rem;
+                text-align: center;
+            margin: 0 auto;
+               }
+               @media only screen and (max-width: $bp-largest) {
+             
+                margin-bottom: 2rem;
+                font-size: 1.9rem;
+              }
+              
+        }
+        p{
+            font-size: 1.6rem;
+            margin-bottom: 2.3rem;
+            opacity: .7;
+            width: 70%;
+
+            @media only screen and (max-width:  $bp-ver-largest) {
+             
+               font-size: 1rem;
+               width: 20rem;
+               margin: 0;
+               }
+
+            @media only screen and (max-width: $bp-largest) {
+             
+                font-size: 1rem;
+                width: 10rem;
+                text-align: center;
+                 margin: 0 auto;
+               }
+               @media only screen and (max-width: $bp-largest) {
+             
+                font-size: .8rem;
+              }
+        }
+        a{
+            font-size: 1.5rem;
+            transition: all .3s;
+            @media only screen and (max-width: $bp-largest) {
+             
+                display: block;
+                width: 10rem;
+                text-align: center;
+                 margin: 2rem auto;
+               }
+      
+            &:hover{
+                margin-left: .1rem;
+                border-bottom: 1px solid $button-background-color;
+                color: $button-background-color;
+            
+            }
+            &:hover i{
+                transform: translateX(8px);
+                color: $button-background-color;
+            }
+        }
+        i{
+            transition: all .3s;
+            margin-left: .4rem;
+         
+            @media only screen and (max-width: $bp-largest) {
+             
+                
+                width: 10rem;
+                text-align: center;
+                 margin: 0 auto;
+               }
+        }
+    }
+}

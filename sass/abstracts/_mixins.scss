@@ -1,0 +1,23 @@
+@mixin buttonColors{
+    padding: 20px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: $button-background-color;
+    cursor: pointer;
+    width: 200px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px rgb(136, 135, 135);
+
+ 
+
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}

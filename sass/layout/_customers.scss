@@ -1,0 +1,68 @@
+.customers{
+    @include flexCenter;
+    width: 100%;
+    flex-direction: column;
+    background-color: #FAF8FC;
+
+    h1{
+        width: 80rem;
+        padding: 5rem 0 8rem 0;
+        font-size: 3.2rem;
+        font-weight: 400;
+        border-bottom: 1px solid #C0C0C0;
+    }
+    &__container{
+        scroll-behavior: smooth;
+        width: 80rem;
+        display: flex;
+        overflow: scroll;
+        cursor: pointer;
+        user-select: none;
+
+        
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    
+    }
+    &-div{
+  
+        width: 180rem;
+        display: flex;
+        // overflow: scroll;
+    }
+    &__client{
+
+        width: 30rem;
+        margin: 0;
+        padding: 0;
+        margin-right: 5rem;
+      
+  
+        
+        &:hover{
+            opacity: .7;
+        
+        }
+       
+        h1{
+            border:none;
+            padding: 30px 0 30px 0;
+            width: 10rem;
+           
+           
+           img{
+            width: 12rem;
+            height: 5rem;
+           }
+
+        }
+        p{
+        font-size: 1.4rem;
+        width: 50%;
+        font-weight: 300;
+        margin-bottom: 4rem;
+        }
+    }
+ 
+}

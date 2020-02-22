@@ -1,0 +1,33 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/content";
+@import "layout/notepadContainer";
+@import "layout/clepisdraContainer";
+@import "layout/library";
+@import "layout/noise";
+@import "layout/form";
+@import "layout/ourInfo";
+@import "layout/history";
+@import "layout/timeline";
+@import "layout/customers";
+@import "layout/pay-method";
+
+
+@import "base/typography";
+@import "base/base";
+@import "base/loading-animation";
+
+@import "components/adventages";
+
+@import "components/notepad";
+@import "components/clepsidra";
+@import "components/noisePage";
+@import "components/photoBaner";
+@import "components/data-information";
+
+
+

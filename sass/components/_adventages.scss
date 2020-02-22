@@ -1,0 +1,123 @@
+.adventages{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+&__center{
+
+}
+
+    &__title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+      width: 50%;
+      margin: auto;
+        
+       }
+    }
+
+    &__info{
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 5px;
+
+           @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+      width: 50%;
+      margin: auto;
+        
+       }
+    }
+
+    &__carts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+
+
+      
+        @media only screen and (max-width: $bp-largest) {
+            display: block;
+             margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            
+           }
+   
+    }
+
+    .first{
+        @media only screen and (max-width: $bp-largest) {
+         margin: 0 auto;
+         width: 100%;
+         display: block;
+            
+        }
+    }
+
+    &__header-cart{
+        display: flex;
+        align-items: center;
+
+      
+      
+    }
+    &__left-cart{
+        width: 28%;
+        @media only screen and (max-width: $bp-ver-largest) {
+         
+            width: 100%;
+            
+           }
+    }
+    &__right-cart{
+        width: 28%;
+        margin-left: 2rem;
+        @media only screen and (max-width: $bp-ver-largest) {
+            width: 100%;
+           
+           }
+    }
+    &__icon{
+        width: 50px;
+        height: 50px;
+        @media only screen and (max-width: $bp-ver-largest) {
+            width: 30px;
+        height: 30px;
+        display: none;
+   
+        }
+        
+    }
+    &__header-title{
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 100%;
+            margin:2rem 0;
+        }
+        
+    }
+    &__description{
+        font-size: 1rem;
+        width: 80%;
+        text-align: left;
+        margin-left: 16.5%;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1rem;
+            text-align: center;
+            width: 70%;
+        }
+        
+    }
+}

@@ -1,0 +1,45 @@
+.library{
+    @include flexCenter;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+    background-color: $library-color;
+    padding: 3rem;
+    margin-bottom: -2rem;
+
+    h2{
+        font-size: 1.8rem;
+        @media only screen and (max-width: $bp-largest) {
+             
+            font-size: 2rem;
+            margin: 0 auto;
+            text-align: center;
+          }
+          @media only screen and (max-width: $bp-medium) {
+            font-size: 1.5rem;
+            margin: 0 auto;
+            
+          }
+          @media only screen and (max-width: $bp-small) {
+             
+            font-size: 1rem;
+          }
+          
+        
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: $bp-largest) {
+        
+            font-size: 1.8;
+          }
+          @media only screen and (max-width: $bp-medium) {
+            font-size: 1.1rem;
+            width: 300px;
+            margin: 2rem 0;
+            text-align: center;
+            
+        }
+    }
+}

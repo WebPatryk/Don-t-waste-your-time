@@ -1,0 +1,280 @@
+button{
+@include buttonColors;
+}
+button:hover{
+    background-color: #9e9da0;
+}
+.button-header{
+margin-top: 2rem;
+@media only screen and (max-width: $bp-largest) {
+    font-size: .6rem;
+    width: 130px;
+    letter-spacing: .2px;
+}
+}
+
+
+.special-btn{
+    position: relative;
+    line-height: 0;
+    height: 30px;
+    &::before{
+        content: '';
+        transition: all .3s;  
+        
+    }
+ 
+}
+.special-btn:hover::before{
+    position: absolute;
+    top:-10px;
+    left: -10px;
+    border:5px solid $button-background-color;
+    width: 105%;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.header-black{
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff !important;
+    height: 90px;
+    opacity: 1;
+
+ 
+ 
+}
+.black_font{
+    color: #000 !important;
+  
+    &:hover{
+        border-bottom: 2px solid black !important;
+    }
+    
+}
+
+.cart{
+    margin-bottom: 1.5rem;
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+           
+       }
+
+}
+
+.view{
+    color:black;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+video{
+    // position: relative;
+    // top:-27px;
+    // left: 0;
+    // width: 99vw;
+    overflow: hidden;
+    opacity: .2;
+    // height: 120vh;
+    margin: 0;
+    padding:0;
+    
+}
+
+
+.gender{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 1rem;
+        padding-top: .6rem;
+        
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: .7rem;
+        padding-top: 1rem;
+        display: block;
+        margin: 2rem auto;
+    }
+}
+.gender input[type=radio]{
+    display: none;
+}
+.gender span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 3px solid $button-background-color;
+    display: block;
+    position: absolute;
+    top:10px;
+    left: -40px;
+
+ 
+}
+.gender span::after{
+    content: '';
+    height: 14px;
+    width: 14px;
+    background-color: $button-background-color;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.gender input[type=radio]:checked ~ span::after{
+    content: '';
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+.line{
+width: 100%;
+height: 1px;
+background-color: black;
+}
+
+.active{
+    border-bottom: 2px solid white;
+}
+.line-text{
+    height: 5px;
+    width: 150px;
+    background-color: $button-background-color;
+}
+
+.line-date{
+    margin-top: -35px;
+    position: absolute;
+    top:0;
+    left: 23.8%;
+    height: 111%;
+    width: 3px;
+    background-color: gray;
+    opacity: .5;
+}
+.line-year{
+    margin-left: -10px;
+    height: 5px;
+    width: 80px;
+    background-color: $button-background-color;
+}
+
+.line-color-1{
+    background-color: #F37070;
+}
+.line-color-2{
+    background-color: #8BC1C1;
+}
+.line-color-3{
+    background-color: #7CE934;
+}
+.line-color-4{
+    background-color: #EBA313;
+}
+.transparent{
+    background-color: transparent !important;
+    position: absolute;
+    top:0;
+    left: 0;
+    max-width: 100%;
+    
+}
+.to-us{
+    color: #57FCCD;
+}
+.small-rotate{
+    transform: skew(-30deg);
+    display: inline-block;
+}
+.fab:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+    transition: all .3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0) scale(1);
+    }
+    100%{
+        transform: rotate(40deg) scale(1.4)
+
+    }
+}
+
+.icon-contact{
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: .6rem;
+  
+}
+.fa-eye{
+    color: #009FBD;
+}
+.fa-id-card{
+    color: #5A67AA;
+}
+.fa-file-contract{
+   color: #D7542B
+}
+.fa-hashtag{
+    color:#AA3381;
+    width: 70%;
+}
+
+// Error message
+
+.error-message-name{
+    position: absolute;
+    top:40%;
+    left: 2%;
+    color: red;
+    display: none;
+}
+.error-message-surname{
+    position: absolute;
+    top:40%;
+    left: 56%;
+    color: red;
+    display: none;
+}
+.error-message-email{
+    position: absolute;
+    top:53%;
+    left: 2%;
+    color: red;
+    display: none;
+}
+.error-message-area{
+    position: absolute;
+    top:89%;
+    left: 2%;
+    color: red;
+    display: none;
+}
+
+.tab-border{
+border-bottom: 4px solid#715899;
+}
+// .pay-active{
+//     border: 2px solid 
+// }
+.cash, .pay-contact, .carts{
+    display: none;
+}
+.show{
+    display: flex ;
+}
