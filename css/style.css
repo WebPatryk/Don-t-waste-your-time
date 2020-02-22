@@ -1237,7 +1237,7 @@ body {
           margin: 0 auto; } }
 
 .photoBaner {
-  background-image: linear-gradient(to right bottom, rgba(80, 79, 83, 0.3), #202029), url("../../img/aboutUs-baner.jpg");
+  background-image: linear-gradient(to right bottom, rgba(80, 79, 83, 0.3), #202029), url("https://cdn.pixabay.com/photo/2015/01/25/21/02/phone-612061_960_720.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
