@@ -278,3 +278,26 @@ border-bottom: 4px solid#715899;
 .show{
     display: flex ;
 }
+
+.toggle{
+    width: 100%;
+    display: none;
+    text-align: right;
+    font-size: 2rem;
+    color: #fff;
+
+
+    @media only screen and (max-width: $bp-medium) {
+        position: absolute;
+        top:15px;
+        right: 50px;
+        z-index: 100;
+        display: block;
+
+    }
+
+}
+
+.activeBar{
+    display: block !important;
+}

@@ -1,6 +1,7 @@
 const payMethodDiv = document.querySelectorAll('.pay-method__div');
 const payCarts = document.querySelectorAll('.pay-cart');
 
+
 function addBorder(e) {
     removeBorder()
     removeShow()
@@ -29,3 +30,33 @@ function removeShow() {
         payCart.classList.remove('show')
     })
 }
+
+
+
+
+
+const faBars = document.querySelector('.fa-bars');
+let activeBar = true;
+
+faBars.addEventListener('click', function () {
+
+    if (activeBar) {
+
+
+        const navigation = document.querySelector('.navigation')
+        navigation.classList.toggle('activeBar');
+        const header = document.querySelector('.header');
+        header.style.height = '250px';
+        activeBar = false
+    }
+    else {
+
+        const navigation = document.querySelector('.navigation')
+        navigation.classList.toggle('activeBar');
+        const header = document.querySelector('.header');
+        header.style.height = '80px';
+        activeBar = true;
+
+    }
+
+})
