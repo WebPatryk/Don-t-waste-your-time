@@ -10,6 +10,12 @@
         font-size: 3.2rem;
         font-weight: 400;
         border-bottom: 1px solid #C0C0C0;
+
+        @media only screen and (max-width: $bp-largest) {
+           text-align: center;
+           margin: 2rem 0;
+           width: 100%;
+           }
     }
     &__container{
         scroll-behavior: smooth;
@@ -19,7 +25,12 @@
         cursor: pointer;
         user-select: none;
 
-        
+        @media only screen and (max-width: $bp-largest) {
+            width: 15rem;
+            display: block;
+      
+        }
+
         &::-webkit-scrollbar {
             display: none;
           }
@@ -30,6 +41,13 @@
         width: 180rem;
         display: flex;
         // overflow: scroll;
+
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 30rem;
+            display: block;
+      
+        }
     }
     &__client{
 

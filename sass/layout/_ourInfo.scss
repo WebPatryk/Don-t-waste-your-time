@@ -3,10 +3,18 @@
     @include flexCenter;
 
 
+    @media only screen and (max-width: $bp-large) {
+        display: block;
+        width: 100%;
+      }
+
     .ourInfo__text{
         margin-top: 2rem;
         width: 30rem;
         margin-right: 3rem;
+        @media only screen and (max-width: $bp-largest) {
+           margin: 2rem auto;
+          }
 
         h1{
             font-size: 3rem;
@@ -21,10 +29,22 @@
  
     .ourInfo__photo{
         width: 45rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 100%;
+            text-align: center;
+          
+           }
         img{
             width: 45rem;
             height:40rem;
             border-radius: 5px;
+
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 35rem;
+                height:25rem;
+              }
         }
     }
 
