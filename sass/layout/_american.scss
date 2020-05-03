@@ -1,0 +1,12 @@
+.american{
+    width: 100%;
+    
+    margin: 4rem auto;
+    clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+    background-color: #CABEB2;
+
+    @media only screen and (max-width: $bp-large) {
+        clip-path: none
+
+    }
+}

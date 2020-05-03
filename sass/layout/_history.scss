@@ -12,22 +12,44 @@
         margin-top: 2rem;
         width: 30rem;
         margin-right: 3rem;
-        @media only screen and (max-width: $bp-largest) {
+        @media only screen and (max-width: $bp-ver-largest) {
             display: block;
             margin: 0 auto;
+            margin-left: 8rem;
+           }
+           @media only screen and (max-width: $bp-largest) {
+            display: block;
+            margin: 2rem auto;
+            
+           }
+           @media only screen and (max-width: $bp-small) {
+            margin-left: 5rem;
+            width: 80%;
+            
            }
     
 
         h1{
             font-size: 2.3rem;
            margin-bottom: 1rem;
-
-    
+           @media only screen and (max-width: $bp-ver-largest) {
+           font-size: 2rem;
+           }
+           @media only screen and (max-width: $bp-small) {
+            width: 80%;
+           }
         }
         p{
             font-weight: 300;
             font-size: 1.2rem;
             margin-bottom: 3rem;
+            @media only screen and (max-width: $bp-ver-largest) {
+               font-size: 1rem;
+               }
+               @media only screen and (max-width: $bp-small) {
+               width: 80%;
+                
+               }
         }
     }
    
@@ -36,6 +58,10 @@
         width: 45rem;
         height: 100%;
         margin-bottom: 10rem;
+        @media only screen and (max-width: $bp-largest) {
+            
+            width: 100%;
+            }
         
         h1{
         font-weight: 500;
@@ -44,8 +70,14 @@
         height: 100%;
         padding-left: 15rem;
 
+        @media only screen and (max-width: $bp-ver-largest) {
+            padding-left: 8rem;
+            }
+
         @media only screen and (max-width: $bp-largest) {
-           text-align: left;
+           text-align: center;
+           padding-left: 0;
+           width: 100%;
            }
         }
     }

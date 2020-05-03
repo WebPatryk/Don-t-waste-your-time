@@ -3,84 +3,55 @@
     width: 100%;
     flex-direction: column;
     background-color: #FAF8FC;
-
+    padding-bottom: 10rem;
     h1{
         width: 80rem;
         padding: 5rem 0 8rem 0;
         font-size: 3.2rem;
         font-weight: 400;
-        border-bottom: 1px solid #C0C0C0;
+        font-weight: bold;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top:28%;
+            left: 0;
+            width: 21rem;
+            height: 5px;
+            background-color:#948CA1;
+
+            @media only screen and (max-width: $bp-large) {
+              left: 33%;
+              
+              } 
+              @media only screen and (max-width: $bp-medium) {
+                display: none;
+                } 
+                
+        }
 
         @media only screen and (max-width: $bp-largest) {
            text-align: center;
            margin: 2rem 0;
            width: 100%;
            }
-    }
-    &__container{
-        scroll-behavior: smooth;
-        width: 80rem;
-        display: flex;
-        overflow: scroll;
-        cursor: pointer;
-        user-select: none;
 
-        @media only screen and (max-width: $bp-largest) {
-            width: 15rem;
-            display: block;
-      
-        }
-
-        &::-webkit-scrollbar {
-            display: none;
-          }
-    
-    }
-    &-div{
-  
-        width: 180rem;
-        display: flex;
-        // overflow: scroll;
-
-
-        @media only screen and (max-width: $bp-largest) {
-            width: 30rem;
-            display: block;
-      
-        }
-    }
-    &__client{
-
-        width: 30rem;
-        margin: 0;
-        padding: 0;
-        margin-right: 5rem;
-      
-  
-        
-        &:hover{
-            opacity: .7;
-        
-        }
+          
        
-        h1{
-            border:none;
-            padding: 30px 0 30px 0;
-            width: 10rem;
-           
-           
-           img{
-            width: 12rem;
-            height: 5rem;
-           }
-
-        }
-        p{
-        font-size: 1.4rem;
-        width: 50%;
-        font-weight: 300;
-        margin-bottom: 4rem;
-        }
     }
+  
  
 }
+
+.swiper-container {
+     width: 100%;
+     padding-bottom: 5rem;
+     overflow-y: hidden;
+}
+  .swiper-slide {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;;
+
+  }

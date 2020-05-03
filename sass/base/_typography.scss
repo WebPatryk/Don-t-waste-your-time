@@ -70,6 +70,7 @@ margin-top: 2rem;
     font-size: 1.4rem;
     border-bottom: 1px solid #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 video{
@@ -269,9 +270,7 @@ background-color: black;
 .tab-border{
 border-bottom: 4px solid#715899;
 }
-// .pay-active{
-//     border: 2px solid 
-// }
+
 .cash, .pay-contact, .carts{
     display: none;
 }
@@ -299,5 +298,48 @@ border-bottom: 4px solid#715899;
 }
 
 .activeBar{
-    display: block !important;
+    // display: block !important;
+    color: black !important;
+}
+
+
+@media only screen and (max-width:$bp-medium){
+
+
+    .hamburger-line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    .header{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        right: 5%;
+        z-index: 10;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+
+    .open{
+        clip-path: circle(1500px at 90% -10vw);
+        -webkit-clip-path: circle(1500px at 50% -10%);  
+        height: 100vh;
+
+    }
+
+}
+
+.header-contact{
+    background-color: transparent !important;
+    position: absolute;
+
+}
+.contact-body{
+    overflow-x: hidden;
 }

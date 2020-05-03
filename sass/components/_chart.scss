@@ -1,0 +1,81 @@
+.chart{
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10rem;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+
+        }
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: 100%;
+
+        }
+    
+    }
+    &__left{
+       
+    }
+    &__title{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bolder;
+        background-image: url('../img/time10.jpg');
+        background-size: cover;
+        background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.6rem;
+        }
+        @media only screen and (max-width: $bp-large) {
+           font-size:1rem;
+        }
+    }
+    &__text{
+        font-size: 1.2rem;
+        width: 50%;
+        margin: 2rem auto;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: .8rem;
+        }
+     
+    }
+    &__button{ 
+        display: block;
+        margin: 0 auto;
+       
+    }
+    &__link{
+        text-decoration: none;
+    }
+
+    &__right{
+        width: 30rem;
+        height: 30rem;
+        background-image: url('../img/chart.png');
+        background-size: cover;
+        background-position: center;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            transform: scale(.7);
+         
+        }
+        @media only screen and (max-width: $bp-small) {
+            transform: scale(.5);
+         
+        }
+    }
+}

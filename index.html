@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Don't waste your time</title>
-    <link rel="stylesheet" href="./font-awesome/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./font-awesome/all.min.css">
     <script src="https://kit.fontawesome.com/269a43d1bb.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -46,36 +47,39 @@
 
     <section class="header">
 
-        <div class="logo">
-            <a href="#"> <img src="img/time.png" alt="time"></a>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
         </div>
 
-        <ul class="navigation">
 
-            <li><a href="index.html" class="header_link active">Home</a></li>
-            <li><a href="aboutUs.html" class="header_link">About Us</a></li>
-            <li><a href="gallery.html" class="header_link">Gallery</a></li>
-            <li><a href="pricing.html" class="header_link">Pricing</a></li>
-            <li><a href="contact.html" class="header_link">Contact Us</a></li>
 
+        <a href="index.html" class="header__link-photo"> <img src="./img/logo.svg" alt="time" class="header__logo"></a>
+
+
+        <ul class="header__navigation">
+            <li><a href="index.html" class="header__link active">Home</a></li>
+            <li><a href="aboutUs.html" class="header__link">About Us</a></li>
+            <li><a href="gallery.html" class="header__link ">Gallery</a></li>
+            <li><a href="pricing.html" class="header__link">Pricing</a></li>
+            <li><a href="contact.html" class="header__link">Contact Us</a></li>
         </ul>
+
+
     </section>
 
-
-    <div class="toggle">
-        <i class="fas fa-bars"></i>
-    </div>
 
 
     <section class="headText">
         <div class="headingText__left">
             <h1 class="headText__heading">Time is your future</h1>
-            <p class="headText__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error quaerat!
-                Quam
-                quia excepturi, corrupti non at esse laboriosam fuga architecto ipsam eligendi tenetur id praesentium.
-                Praesentium eos incidunt ducimus.
+            <p class="headText__text">This term is often translated very generally. Time is an opponent that everyone
+                would like to tame. On this page you will learn how to save your time by doing good practices.They will
+                help you to regain control over your.
             </p>
-            <button class="button button-header special-btn">Look my advice</button>
+            <a href="#notepad"><button class="button button-header special-btn">Look my advice</button></a>
+
         </div>
         <div class="headingText__right">
             <img src="img/cartoon.png" alt="timer" class="headText__img">
@@ -99,11 +103,8 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">Stimulates creativity</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi eligendi culpa velit,
-                            error
-                            sed nisi illum magnam soluta esse!assss
+                        <p class="adventages__description">Most of us are visual learners. Our brain can easy remember
+                            information when it can see it. Concentrate on the target faster and remember it faster
                         </p>
                     </div>
 
@@ -112,11 +113,8 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">Trains memory</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi eligendi culpa
-                            velit, error
-                            sed nisi illum magnam soluta esse!
+                        <p class="adventages__description">The memory problem affects many people. They don't know that
+                            our brain, if it is often used, works better and doesn't forget information.
                         </p>
                     </div>
 
@@ -125,11 +123,8 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">Control all your day plan</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi eligendi culpa
-                            velit, error
-                            sed nisi illum magnam soluta esse!
+                        <p class="adventages__description">Each of us wants to have control over time. We waste it very
+                            often. A good, created plan gives us control over it.
                         </p>
 
                     </div>
@@ -142,12 +137,8 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">Good gift for somebody</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi eligendi
-                            culpa
-                            velit, error
-                            sed nisi illum magnam soluta esse!
+                        <p class="adventages__description">Do you need a gift for someone? Recommend it to someone who
+                            regrets not wasting their time. She'll thank you for that.
                         </p>
                     </div>
 
@@ -156,12 +147,9 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">It's your the best assistant</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi eligendi
-                            culpa
-                            velit, error
-                            sed nisi illum magnam soluta esse!
+                        <p class="adventages__description">
+                            At work, at school at home, your assistant is always with you. If you forget any
+                            information, you'll find it on this page.
                         </p>
                     </div>
 
@@ -170,12 +158,9 @@
                             <img src="img/calendar.png" alt="" class="adventages__icon">
                             <h1 class="adventages__header-title">It don't need battery</h1>
                         </div>
-                        <p class="adventages__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex
-                            commodi
-                            eligendi culpa
-                            velit, error
-                            sed nisi illum magnam soluta esse!
+                        <p class="adventages__description">
+                            If you want to write down some information, you don't need an electronic device. All you
+                            need is a piece of paper.
                         </p>
                     </div>
                 </div>
@@ -187,20 +172,17 @@
 
 
 
-    <section class="notepad__Container">
+    <section class="notepad__Container" id="notepad">
         <div class="notepad">
-            <div class="notepad__book">
+            <div class="notepad__book" data-aos="fade-left">
                 <img src="./img/notepad.png" alt="notepad" class="notepad__photo">
             </div>
-            <div class="notepad__info">
+            <div class="notepad__info" data-aos="fade-right">
                 <h1>Using a notepad give you a chance to control a day schema</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi libero ipsam laudantium
-                    similique
-                    est
-                    iusto earum pariatur animi? Doloribus cum labore temporibus praesentium nihil. Quia laboriosam
-                    doloribus
-                    quae maiores rerum?</p>
-                <button class="special-btn">Read more</button>
+                <p>This traditional method is more often more effective than using electronic devices. When you write
+                    some information on paper, your brain absorbs it more easily. This technique has been used for
+                    centuries and is still valid.</p>
+                <a href="pricing.html"><button class="special-btn">Read more</button></a>
             </div>
 
         </div>
@@ -209,17 +191,14 @@
     <section class="clepsidra__Container">
         <div class="clepsidra">
 
-            <div class="clepsidra__information">
+            <div class="clepsidra__information" data-aos="fade-left">
                 <h1>Divide your meals for some part</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi libero ipsam laudantium
-                    similique
-                    est
-                    iusto earum pariatur animi? Doloribus cum labore temporibus praesentium nihil. Quia laboriosam
-                    doloribus
-                    quae maiores rerum?</p>
-                <button class="special-btn">Read more</button>
+                <p>It can sometimes be too difficult to complete all tasks at the same time. Try to divide your task
+                    into small parts. In this concept you will concentrate more time on one task and not on everything.
+                    This will allow you to do it faster from "a" to "z".</p>
+                <a href="pricing.html"> <button class="special-btn">Read more</button></a>
             </div>
-            <div class="clepsidra__book">
+            <div class="clepsidra__book" data-aos="fade-right">
                 <img src="./img/clepsidra.png" alt="clepsidra" class="clepsidra__photo">
             </div>
         </div>
@@ -229,7 +208,7 @@
     <section class="library">
         <h2>Do you wanna change your time scheduling</h2>
         <h1>Browse our library</h1>
-        <button class="special-btn">View this</button>
+        <a href="gallery.html"><button class="special-btn">View this</button></a>
     </section>
 
 
@@ -244,39 +223,35 @@
             <div class="video-center">
                 <div class="noise__sidebar">
                     <ul>
-                        <li><a href="#"><i class="far fa-clock"></i>
+                        <li data-aos="flip-left" data-aos-offset="0"><a href="index.html"><i class="far fa-clock"></i>
                                 <p>watch</p>
                             </a></li>
-                        <li><a href="#"><i class="fas fa-stopwatch"></i>
+                        <li data-aos="flip-left" data-aos-offset="0"><a href="index.html"><i
+                                    class="fas fa-stopwatch"></i>
                                 <p>stopwwatch</p>
                             </a></li>
-                        <li><a href="#"><i class="far fa-calendar-alt"></i>
+                        <li data-aos="flip-left" data-aos-offset="0"><a href="index.html"><i
+                                    class="far fa-calendar-alt"></i>
                                 <p>calendar</p>
                             </a></li>
-                        <li><a href="#"><i class="fas fa-hourglass-start"></i>
+                        <li data-aos="flip-left" data-aos-offset="0"><a href="index.html"><i class=" fas
+                                fa-hourglass-start"></i>
                                 <p>hourglass</p>
                             </a></li>
                     </ul>
 
-                    <!-- <div class="arrow">
-                        <span>Show affection</span>
-                    </div> -->
+
                 </div>
 
 
 
-                <div class="noise__presentation">
+                <div class="noise__presentation" data-aos="fade-left">
 
                     <h1>Time counting devices</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quos officia eveniet
-                        dicta
-                        quae!
-                        Ex
-                        fugit molestiae voluptas consequuntur dolor? Sequi iste veniam quisquam tempora suscipit
-                        nulla
-                        impedit
-                        libero officia. </p>
-                    <a class="view">View more <i class="far fa-hand-point-right"></i></a>
+                    <p>Nowadays people have many different devices that help them with different things. The most
+                        effective are phones, computers, smartphones, and more traditional ones like notes. You can
+                        write tasks for today and control them with a preset timer.</p>
+                    <a class="view" href="pricing.html">View more <i class="far fa-hand-point-right"></i></a>
                 </div>
             </div>
 
@@ -380,7 +355,7 @@
             <div class="line"></div>
             <div class="footer__under-info">
                 <div class="footer__text">
-                    <p><img src="#" alt=""> Copyright © 2015 — 2020 Angee Technologies Limited. All rights reserved
+                    <p>Copyright © 2015 — 2020 WebPatryk Technologies Limited. All rights reserved
                     </p>
                 </div>
                 <div class="footer__social-media">
@@ -397,12 +372,16 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <script src="script/swiper.min.js"></script>
     <script src="script/main.js"></script>
     <script type="module" src="script/form.js"></script>
     <script src="script/app.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 

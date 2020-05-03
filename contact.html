@@ -11,9 +11,10 @@
     <script src="https://kit.fontawesome.com/269a43d1bb.js"></script>
 
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body class="contact-body">
 
 
 
@@ -42,28 +43,41 @@
 
 
     <!-- Body content -->
+    <section class="header header-contact">
 
-    <section class="header header-to-contact transparent">
-
-        <div class="logo">
-            <a href="#"> <img src="img/time.png" alt="time"></a>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
         </div>
-        <ul class="navigation">
-            <li><a href="index.html" class="header_link">Home</a></li>
-            <li><a href="aboutUs.html" class="header_link">About Us</a></li>
-            <li><a href="gallery.html" class="header_link">Gallery</a></li>
-            <li><a href="pricing.html" class="header_link">Pricing</a></li>
-            <li><a href="contact.html" class="header_link active">Contact Us</a></li>
+
+
+
+        <a href="index.html" class="header__link-photo"> <img src="./img/logo.svg" alt="time" class="header__logo"></a>
+
+
+        <ul class="header__navigation">
+            <li><a href="index.html" class="header__link">Home</a></li>
+            <li><a href="aboutUs.html" class="header__link">About Us</a></li>
+            <li><a href="gallery.html" class="header__link">Gallery</a></li>
+            <li><a href="pricing.html" class="header__link">Pricing</a></li>
+            <li><a href="contact.html" class="header__link active">Contact Us</a></li>
         </ul>
+
 
     </section>
 
+
+
+
+
     <div class="photoBaner"></div>
     <div class="contactHeader">
-        <h1> CONTACT <span class="to-us small-rotate">TO US</span></h1>
-        <p>While we're good with <span class="to-us">smoke</span> signals, there are simpler ways <span
-                class="to-us">for us</span> to get in touch
-            and answer your <span class="to-us">questions</span>.
+        <h1 data-aos="fade-up"> CONTACT <span class="to-us small-rotate">TO US</span></h1>
+        <p> Our company is <span class="to-us">open</span> 24 hours a day. If you have any <span
+                class="to-us">questions</span>., ask us about it.
+            Below you will find the <span class="to-us">way</span>
+            you can contact us.
         </p>
 
     </div>
@@ -72,42 +86,42 @@
         <h1 class="data-information__title">Contact data</h1>
 
         <div class="information">
-            <div class="column-data">
+            <div class="column-data" data-aos="fade-up">
                 <i class="fas fa-phone-alt icon-contact"></i>
                 <h1>Call to us</h1>
                 <p>746 123 223</p>
-                <p>niecehelp@gmail.com</p>
+                <p>savetime@gmail.com</p>
             </div>
 
 
-            <div class="column-data">
+            <div class="column-data" data-aos="fade-up">
                 <i class="far fa-eye icon-contact"></i>
                 <h1>Visit us</h1>
-                <p>Walter 23 street </p>
+                <p>Krakowska 23 street </p>
                 <p>Krakow 32-200 Kraków</p>
             </div>
 
 
 
-            <div class="column-data">
+            <div class="column-data" data-aos="fade-up">
                 <i class="fas fa-id-card icon-contact"></i>
                 <h1>Telephone & mail</h1>
                 <p>746 123 223</p>
-                <p>niecehelp@gmail.com</p>
+                <p>savetime@gmail.com</p>
             </div>
 
 
 
-            <div class="column-data">
+            <div class="column-data" data-aos="fade-up">
                 <i class="fas fa-file-contract icon-contact"></i>
                 <h1>Call to us or send a mail</h1>
                 <p>and become a happy </p>
-                <p>niecehelp@gmail.com</p>
+                <p>savetime@gmail.com</p>
             </div>
 
 
 
-            <div class="column-data">
+            <div class="column-data" data-aos="fade-up">
                 <i class="fas fa-hashtag icon-contact"></i>
                 <h1>Connect with us</h1>
 
@@ -211,7 +225,8 @@
             <div class="line"></div>
             <div class="footer__under-info">
                 <div class="footer__text">
-                    <p><img src="#" alt=""> Copyright © 2015 — 2020 Angee Technologies Limited. All rights reserved</p>
+                    <p>Copyright © 2015 — 2020 WebPatryk Technologies Limited. All rights reserved
+                    </p>
                 </div>
                 <div class="footer__social-media">
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -223,8 +238,16 @@
         </div>
 
     </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="script/swiper.min.js"></script>
     <script type="module" src="script/form.js"></script>
     <script src="script/main.js"></script>
+    <script src="script/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 

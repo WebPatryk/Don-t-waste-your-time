@@ -6,6 +6,7 @@
     &__container{
         @include flexCenter;
         box-shadow: 0 5px 5px -5px #333;
+    
     }
 
     &__info-container{
@@ -22,6 +23,10 @@
         @media only screen and (max-width: $bp-medium) {
           margin: 1rem;
         }
+        @media only screen and (max-width: $bp-small) {
+            margin: .6rem;
+              
+          }
         li{
             padding: .4rem;
             
@@ -34,6 +39,11 @@
             color:black;
             text-decoration: none;
             transition: .4s;
+            @media only screen and (max-width: $bp-small) {
+                font-size: .6rem;
+                  
+              }
+            
         }
         a:hover{
           border-bottom: 1px solid black;
@@ -60,6 +70,9 @@
         @media only screen and (max-width: $bp-medium) {
             width: 50%;
             margin: 1rem;
+          }
+          @media only screen and (max-width: $bp-small) {
+           font-size: .7rem;
           }
     }
     &__social-media{

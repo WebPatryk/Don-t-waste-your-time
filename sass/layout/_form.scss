@@ -98,3 +98,12 @@ textarea:focus{
 }
 
 }
+
+@media only screen and (max-width: $bp-medium) {
+    .submit{
+        width: 80%;
+    }
+    .form-btn{
+       margin: 0 auto;
+    }
+}

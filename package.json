@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass sass/main.scss css/style.css -w"
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "autoprefixer": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.14.0",
+    "postcss-cli": "^7.1.1"
   },
   "dependencies": {
     "sweetalert": "^2.1.2"

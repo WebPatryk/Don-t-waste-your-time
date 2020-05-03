@@ -1,5 +1,6 @@
 .notepad{
 display: flex;
+width: initial;
 
  @media only screen and (max-width: $bp-medium) {
     display: block;
@@ -8,13 +9,14 @@ display: flex;
 
 
     &__book{
-   
+
         @media only screen and (max-width: $bp-medium) {
             margin-bottom: 3rem;
             text-align: center;
         
         }
     }
+ 
     &__info{
         width: 30rem;
         margin-left: 20rem;
@@ -85,10 +87,14 @@ display: flex;
     &__photo{
         width: 400px;
         height: 400px;
-
+        transition: all .3s ease-in-out;
         @media only screen and (max-width: $bp-largest) {
             width: 200px;
             height: 200px;
         }
     }
+    // &__active{
+    //     opacity: 1;
+    // }
 }
+

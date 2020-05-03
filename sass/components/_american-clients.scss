@@ -1,0 +1,135 @@
+.american{
+    overflow: hidden;
+    position: relative;
+    &__clients-title{
+        font-size: 3rem;
+        margin-bottom: -10rem;
+        transform: skewX(-20deg);
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 95%;
+
+        @media only screen and (max-width: $bp-large) {
+            
+            font-size: 1rem;
+        }
+    }
+    &__title{
+        font-size: 10rem;
+        opacity: .2;
+        font-weight: bolder;
+        position: absolute;
+        top:20%;
+        left: 10%;
+        width: 100%;
+        color: rgb(248, 233, 218);
+     
+        @media only screen and (max-width: $bp-largest) {
+            
+            font-size: 7rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            top:2%;
+            left: 5%;
+            font-size: 4rem;
+        }
+        
+    }
+    &__content{
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__left-content{
+       font-size: 1.8rem;
+       width: 30%;
+       @media only screen and (max-width: $bp-small) {
+          
+      width: 100%;
+    
+}
+    }
+    &__photo-logo{
+        width: 10rem;
+        text-align: center;
+
+    }
+    &__figure{
+     
+        @media only screen and (max-width: $bp-small) {
+            width: 100vw;
+            margin: 0 auto;
+        
+    }
+}
+    &__title-info{
+        color: #fff;
+        @media only screen and (max-width: $bp-large) {
+            
+           font-size: 2.3rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            width: 15rem;
+            display: block;
+            margin: 1rem auto;
+        }
+    }
+    &__title-desc{
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        color: #fff;
+        width: 80%;
+        @media only screen and (max-width: $bp-large) {
+            
+            font-size: 1rem;
+         }
+           @media only screen and (max-width: $bp-small) {
+            font-size: 1.3rem;
+            width: 15rem;
+            display: block;
+            margin: 1rem auto;
+          }
+    }
+    &__right-content{
+
+    }
+
+    &__right-background{
+    margin-top: 10rem;
+    width: 45rem;
+
+    @media only screen and (max-width: $bp-largest) {
+            
+        width: 35rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+            
+        width: 30rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        width: 20rem;
+    }
+
+    }
+
+    &__icon{
+        width: 25rem;
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(110, 104, 107);
+
+   
+    }
+
+}
