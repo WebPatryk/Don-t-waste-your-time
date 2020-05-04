@@ -1,5 +1,4 @@
 
-
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -21,9 +20,6 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-
-
-
 //Change header colors
 
 const header = document.querySelector('.header');
@@ -34,12 +30,11 @@ window.addEventListener('scroll', function () {
 
     if (window.pageYOffset > 100) {
         header.classList.add('header-black');
-        // clearInterval(headerInterval);
+
         for (let i = 0; i < header__link.length; i++) {
             header__link[i].classList.add('black_font');
         }
         activeLine.style.borderBottom = "2px solid black";
-
     }
     else {
         header.classList.remove('header-black');
@@ -58,11 +53,9 @@ window.addEventListener('scroll', function () {
     if (window.pageYOffset > 100) {
 
         header.classList.add('header-black');
-        // clearInterval(headerInterval);
         for (let i = 0; i < header__link.length; i++) {
             header__link[i].classList.add('black_font');
         }
-
     }
     else {
         header.classList.remove('header-black');
@@ -71,16 +64,11 @@ window.addEventListener('scroll', function () {
         }
     }
 
-
-
 });
-
 
 const headText = document.querySelector('.headText');
 
 const colors = ['#4C50AD', '#B04595', '#715899', '#CABEB2'];
-
-
 
 function changeColorBox(color, i) {
     setInterval(() => {
@@ -106,12 +94,10 @@ function changeColorHeader(color, i) {
 
     }, 2500);
 
-
 }
 
 window.addEventListener('change', function () {
     if (window.pageYOffset > 100) {
-
 
     } else if (window.pageYOffset < 100) {
         changeColorBox(colors, 0);
@@ -146,4 +132,3 @@ function changeActiveCart(e) {
     }
     e.target.classList.add('active');
 }
-

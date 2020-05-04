@@ -1,6 +1,7 @@
 
+
 const formBtn = document.querySelector('.form-btn');
-const formularz = document.querySelector('.formularz');
+const form = document.querySelector('.form-content');
 
 //elementy error 
 
@@ -9,49 +10,89 @@ const errorMessageSurname = document.querySelector('.error-message-surname');
 const errorMessageEmail = document.querySelector('.error-message-email');
 const errorMessageArea = document.querySelector('.error-message-area');
 
+//Input name
+
+let name = document.getElementById('name');
+let surname = document.getElementById('surname');
+let email = document.getElementById('email');
+let messageArea = document.getElementById('message-area');
 
 
-formularz.addEventListener('submit', function (e) {
 
-
-    let name = document.getElementById('name').value;
-    let surname = document.getElementById('surname').value;
-    let email = document.getElementById('email').value;
-    let messageArea = document.getElementById('message-area').value;
-
-
+form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    if (name.length <= 2 || name == '') {
+
+
+    let nameValue = document.getElementById('name').value;
+    let surnameValue = document.getElementById('surname').value;
+    let emailValue = document.getElementById('email').value;
+    let messageAreaValue = document.getElementById('message-area').value;
+    let sex1Input = document.querySelector('#sex1');
+    let sex2Input = document.querySelector('#sex2');
+
+
+    validate(nameValue, surnameValue, emailValue, messageAreaValue, sex1Input, sex2Input);
+
+
+});
+
+
+function validate(nameValue, surnameValue, emailValue, messageAreavalue) {
+
+    if (nameValue.length <= 6 || nameValue === '') {
         errorMessageName.style.display = 'block';
+        name.classList.add('error-input');
         errorMessageName.innerHTML = 'Twoje imie jest za krótkie';
 
         return false;
     }
+    else {
+        errorMessageName.style.display = 'none';
+        name.classList.remove('error-input');
 
-    if (surname.length <= 2 || surname == '') {
+    }
+
+    if (surnameValue.length <= 2 || surnameValue == '') {
         errorMessageSurname.style.display = 'block';
+        surname.classList.add('error-input');
         errorMessageSurname.innerHTML = 'Twoje nazwisko jest za krótkie';
 
         return false;
 
     }
+    else {
+        errorMessageSurname.style.display = 'none';
+        surname.classList.remove('error-input');
 
-    if (email === '' || email.indexOf('@') == -1 || email.length <= 6) {
+    }
+
+    if (emailValue === '' || emailValue.indexOf('@') == -1 || emailValue.length <= 6) {
         errorMessageEmail.style.display = 'block';
         errorMessageEmail.innerHTML = 'Twój mail nie spełnia złożoności maila';
+        email.classList.add('error-input');
 
         return false;
 
     }
+    else {
+        errorMessageEmail.style.display = 'none';
+        email.classList.remove('error-input');
 
-    if (messageArea === '' || messageArea.length <= 20) {
+    }
+
+    if (messageAreavalue === '' || messageAreavalue.length <= 20) {
         errorMessageArea.style.display = 'block';
         errorMessageArea.innerHTML = 'Twoja wiadomość jest za krótka';
+        messageArea.classList.add('error-input');
 
         return false;
     }
+    else {
+        errorMessageArea.style.display = 'none';
+        messageArea.classList.remove('error-input');
 
+    }
 
     Swal.fire({
         position: 'center',
@@ -62,11 +103,14 @@ formularz.addEventListener('submit', function (e) {
     });
 
 
-    errorMessageName.style.display = 'none';
-    errorMessageSurname.style.display = 'none';
-    errorMessageEmail.style.display = 'none';
-    errorMessageArea.style.display = 'none';
-    formularz.reset();
-    return true;
+    clearInputValue();
+}
 
-});
+
+
+function clearInputValue() {
+    name.value = '';
+    surname.value = '';
+    email.value = '';
+    messageArea.value = '';
+}

@@ -33,8 +33,6 @@
             margin-right: 7rem;
         }
         @media only screen and (max-width: $bp-small) {
-
-            // margin-left: 4rem;
             width:100%;
             order: 3;
             margin: 0 auto 4rem auto;
@@ -97,7 +95,6 @@
         width: 250px;
         display: flex;
         margin-top: -1rem;
-        // padding-right: 5rem;
         margin-bottom: -2rem;
     }
     @media only screen and (max-width: $bp-small) {

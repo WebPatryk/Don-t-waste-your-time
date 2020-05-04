@@ -39,9 +39,7 @@
 
         @media only screen and (max-width: $bp-small) {
             grid-template-columns: repeat(auto-fit,minmax(90%,1fr))
-            
             }
-
     }
     &__row{
         padding: 5rem;
@@ -69,7 +67,7 @@
         font-size: 1.1rem;
         font-weight: 500;
         @media only screen and (max-width: $bp-small) {
-            font-size: .7rem;
+            font-size: .5rem;
             }
     }
 }

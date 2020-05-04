@@ -27,26 +27,31 @@ gsap.from(".ourInfo__photo", { duration: 1.1, x: 1500, delay: 1, ease: "power2" 
 
 // PAY METHOD 
 
-const payMethodDiv = document.querySelectorAll('.pay-method__div');
+const payMethodDiv = [...document.querySelectorAll('.pay-method__div')];
 const payCarts = document.querySelectorAll('.pay-cart');
 
 
 function addBorder(e) {
     removeBorder();
     removeShow();
-    const element = e.target.parentElement;
-    element.classList.add('tab-border');
-    const page = document.getElementById(`${e.target.parentElement.id}-content`);
-    console.log(e.target.parentElement.id);
+    let element = e.target.parentElement;
+    if (element.classList.contains('pay-method__type')) {
+        element = e.target;
+        const page = document.getElementById(`${e.target.id}-content`);
+        page.classList.add('show');
+        element.classList.add('tab-border');
+    }
+    else {
 
-    page.classList.add('show');
+        element.classList.add('tab-border');
+        const page = document.getElementById(`${e.target.parentElement.id}-content`);
+        page.classList.add('show');
+    }
 }
-
 
 payMethodDiv.forEach(pay => {
     pay.addEventListener('click', addBorder);
 });
-
 
 function removeBorder() {
     payMethodDiv.forEach(pay => {
@@ -64,28 +69,13 @@ function removeShow() {
 const hamburger = document.querySelector('.hamburger');
 const navigationHeader = document.querySelector('.header__navigation');
 
-console.log(hamburger);
 
 hamburger.addEventListener('click', function () {
     navigationHeader.classList.toggle('open');
-});
-
-
-const faBars = document.querySelector('.fa-bars');
-let activeBar = true;
-
-faBars.addEventListener('click', function () {
-
-    if (activeBar) {
-        const header = document.querySelector('.header');
-        header.style.height = '300px';
-        activeBar = false;
+    if (navigationHeader.classList.contains('open')) {
+        document.body.style.overflowY = 'hidden';
     }
     else {
-        const header = document.querySelector('.header');
-        header.style.height = '80px';
-        activeBar = true;
-
+        document.body.style.overflowY = 'scroll';
     }
-
 });

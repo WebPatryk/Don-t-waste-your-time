@@ -13,15 +13,13 @@ margin-top: 2rem;
 }
 }
 
-
 .special-btn{
     position: relative;
     line-height: 0;
     height: 30px;
     &::before{
         content: '';
-        transition: all .3s;  
-        
+        transition: all .3s;         
     }
  
 }
@@ -41,9 +39,6 @@ margin-top: 2rem;
     background-color: #fff !important;
     height: 90px;
     opacity: 1;
-
- 
- 
 }
 .black_font{
     color: #000 !important;
@@ -59,10 +54,8 @@ margin-top: 2rem;
     @media only screen and (max-width: $bp-largest) {
         margin: 0 auto;
         width: 100%;
-        display: block;
-           
+        display: block;      
        }
-
 }
 
 .view{
@@ -74,13 +67,8 @@ margin-top: 2rem;
 }
 
 video{
-    // position: relative;
-    // top:-27px;
-    // left: 0;
-    // width: 99vw;
     overflow: hidden;
     opacity: .2;
-    // height: 120vh;
     margin: 0;
     padding:0;
     
@@ -138,7 +126,6 @@ video{
     content: '';
     transform: translate(-50%,-50%) scale(1);
 }
-
 
 .line{
 width: 100%;
@@ -292,13 +279,11 @@ border-bottom: 4px solid#715899;
         right: 50px;
         z-index: 100;
         display: block;
-
     }
 
 }
 
 .activeBar{
-    // display: block !important;
     color: black !important;
 }
 
@@ -330,8 +315,11 @@ border-bottom: 4px solid#715899;
         clip-path: circle(1500px at 90% -10vw);
         -webkit-clip-path: circle(1500px at 50% -10%);  
         height: 100vh;
+        pointer-events: all;
+
 
     }
+
 
 }
 
@@ -342,4 +330,8 @@ border-bottom: 4px solid#715899;
 }
 .contact-body{
     overflow-x: hidden;
+}
+
+.error-input{
+    border: 1px solid rgb(255, 87, 87) !important;
 }

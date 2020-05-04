@@ -1,22 +1,17 @@
 .data-information{
     margin-bottom: 5rem;
     border-bottom: 1px solid black;
-
-
-
     &__title{
         margin: 2rem 0 3rem 0;
         font-size: 2.8rem;
         text-align: center;
-        
     }
     .information{
         @include flexCenter;
         padding: 3rem 0;
 
         @media only screen and (max-width: $bp-largest) {
-            display: block;
-           
+            display: block;     
            }
 
     }
@@ -48,7 +43,6 @@
            }
         h1{
             font-size: 1.5rem;
-            // margin-bottom: 4.5rem;
         }
         .social-media{
             @include flexCenter;
@@ -61,8 +55,6 @@
                 margin-right: 10px;
                 color: black;
                 font-size: 2rem;
-                // border-radius: 5%;
-                // border:1px solid black;
             }
         }
     }

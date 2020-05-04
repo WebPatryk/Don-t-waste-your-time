@@ -3,13 +3,14 @@
 flex-direction: column;
 margin-bottom: 2rem;
 
+
 @media only screen and (max-width: $bp-medium) {
     display: block;
     width: 60%;
     margin: 2rem auto;
 }
 
-.formularz{
+.form-content{
     position: relative;
 }
 
@@ -23,8 +24,7 @@ margin-bottom: 2rem;
     @media only screen and (max-width: $bp-small) {
         display: block;
       }
-    
- 
+
 }
 
 &__title{

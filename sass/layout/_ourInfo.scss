@@ -33,8 +33,7 @@
             @media only screen and (max-width: $bp-ver-largest) {
                font-size: 2rem;
               }
-              
-           
+  
         }
         p{
             font-weight: 400;
@@ -46,11 +45,8 @@
                 font-size: 1rem;
                 width: 70%;
               }
-        }
-      
+        }  
     }
-   
- 
     .ourInfo__photo{
         width: 45rem;
 
@@ -65,7 +61,6 @@
             height:40rem;
             border-radius: 5px;
 
-
             @media only screen and (max-width: $bp-ver-largest) {
                width: 35rem;
                height: 25rem;
@@ -75,7 +70,6 @@
                 height: 15rem;
                 margin-left: 2.5rem;
               }
-
               @media only screen and (max-width: 350px) {
                 width: 14rem;
                 height: 11rem;

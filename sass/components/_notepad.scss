@@ -6,8 +6,6 @@ width: initial;
     display: block;
 
 }
-
-
     &__book{
 
         @media only screen and (max-width: $bp-medium) {
@@ -93,8 +91,6 @@ width: initial;
             height: 200px;
         }
     }
-    // &__active{
-    //     opacity: 1;
-    // }
+
 }
 
