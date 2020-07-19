@@ -344,9 +344,6 @@
   .form-btn {
     margin: 0 auto; } }
 
-.form-content {
-  position: relative !important; }
-
 .ourInfo {
   margin-top: 90px;
   display: flex;
@@ -1121,6 +1118,9 @@ video {
 
 .error-input {
   border: 1px solid #ff5757 !important; }
+
+.form-content {
+  position: relative !important; }
 
 * {
   margin: 0;

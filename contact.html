@@ -136,20 +136,20 @@
     </section>
 
 
-    <section class="form" method="POST">
-        <form class="form-content">
+    <section class="form">
+        <form class="form-content" action="https://formspree.io/xbjzgvyl" method="POST">
             <h1 class="form__title">Contact us</h1>
 
             <div class="sex">
 
                 <label class="gender">
-                    <input type="radio" name="gender" value="male" id="sex1" checked> Man
+                    <input type="radio" name="Gender" value="male" id="sex1" checked> Man
                     <span class="checkmark"></span>
 
 
                 </label>
                 <label class="gender">
-                    <input type="radio" name="gender" value="female" id="sex2"> Female
+                    <input type="radio" name="Gender" value="female" id="sex2"> Female
                     <span class="checkmark"></span>
 
 
@@ -159,11 +159,11 @@
 
             <div class="name-surname">
 
-                <input type="text" id="name" placeholder="Enter your name" class="name">
+                <input type="text" id="name" placeholder="Enter your name" class="name" name="Name">
                 <span class="error-message-name">Wypełnij wszystkie pola</span>
 
 
-                <input type="text" name="" id="surname" placeholder="Enter your surname">
+                <input type="text" name="" id="surname" placeholder="Enter your surname" name="Surname">
                 <span class="error-message-surname">Wypełnij wszystkie pola</span>
             </div>
 
@@ -172,15 +172,16 @@
 
             <div class="email">
 
-                <input type="email" name="" id="email" placeholder="Enter your e-mail"></div>
+                <input type="email" name="Email" id="email" placeholder="Enter your e-mail"></div>
             <span class="error-message-email">Wypełnij wszystkie pola</span>
 
             <div class="message">
-                <textarea name="" id="message-area" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <textarea name="Message" id="message-area" cols="30" rows="10"
+                    placeholder="Type your message here"></textarea>
                 <span class="error-message-area">Wypełnij wszystkie pola</span>
             </div>
             <div class="submit">
-                <button class="special-btn form-btn">Submit</button>
+                <button class="special-btn form-btn" type="submit">Submit</button>
             </div>
 
         </form>
